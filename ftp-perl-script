@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+#---------install module before running the script------------
+use Net::FTP;
+my $hostname = 'localhost';
+my $username = 'user1';
+my $password = 'wifi123#';
+#------pass hostname or ip address----------------
+my $ftp = Net::FTP->new($hostname);
+#------credentials for login-------------------------
+ $ftp->login($username, $password);
+#-------print presnt working directory---------------
+my $pwd = $ftp->pwd;
+print "$pwd \n---------------------------------------\n";
+#-------print present working dir file or dirs---------
+my @list = $ftp->ls;
+print "@list\n---------------------------------------\n";
+#-------change the dir and list file or dirs----------
+my $chdir = $ftp->cwd('serverfile');
+my @list1 = $ftp->ls('-lR');
+print "@list1\n---------------------------------------\n";
+
