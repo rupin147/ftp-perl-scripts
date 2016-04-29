@@ -8,4 +8,4 @@ curl -L http://cpanmin.us | perl - --sudo Net::FTP
 
 link - http://rupinp.blogspot.in/2016/04/ftp-perl-script-using-netftp.html
 
-get more script - #rupinp.blogspot.com
+##get more script - rupinp.blogspot.com
