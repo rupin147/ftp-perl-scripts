@@ -8,4 +8,4 @@ install the Net::FTP module using below command
 
 link - http://rupinp.blogspot.in/2016/04/ftp-perl-script-using-netftp.html
 
-get more script - http://rupinp.blogspot.in
+get more script - rupinp.blogspot.com
